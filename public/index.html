@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="classTab">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Classtab.org</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+
+  <body ng-controller="sheetsController">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">classtab.org</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="../navbar/">About</a></li>
+            <li><a href="../navbar-static-top/">Links & Credits</a></li>
+            <li><a href="../navbar-static-top/">Tab info</a></li>
+            <li><a href="../navbar-static-top/">Tab vs sheets</a></li>
+            <li><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center">Alurapic</h1>
+      </div>
+      
+      <div ng-repeat="foto in fotos" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title text-center">{{foto.titulo}}</h3>
+        </div>
+        <div class="panel-body">
+            <img class="img-responsive center-block" src="{{foto.url}}">
+        </div>
+      </div>
+    </div>
+
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/controllers/fotosController.js"></script>
+    <script src="js/directives/minhas-diretivas.js"></script>
+  </body>
+</html>

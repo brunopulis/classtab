@@ -1,0 +1,30 @@
+{
+  "name": "classtab",
+  "version": "1.0.0",
+  "description": "SPA Classtab.org",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunopulis/classtab.git"
+  },
+  "keywords": [
+    "sheets",
+    "tablature",
+    "guitar",
+    "music"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunopulis/classtab/issues"
+  },
+  "homepage": "https://github.com/brunopulis/classtab#readme",
+  "devDependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "nedb": "^1.8.0"
+  }
+}
